@@ -1,0 +1,122 @@
+/* body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.calculator-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#emi-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#emi-table th, #emi-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#emi-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot tr td {
+    font-weight: bold;
+} */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.calculator-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 1200px; /* Adjust width as needed */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.tenure-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tenure-options label {
+    margin-bottom: 0;
+}
+
+.tenure-type {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust spacing between inputs */
+}
+
+.tenure-type label {
+    margin-right: 5px; /* Adjust spacing between label and radio button */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#emi-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#emi-table th, #emi-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#emi-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot tr td {
+    font-weight: bold;
+}

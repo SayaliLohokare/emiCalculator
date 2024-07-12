@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>EMI Calculator</h1>
+    <div class="calculator-container">
+        <label for="amount">Loan Amount:</label>
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <label for="rate">Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter Rate">
+        
+        <!-- Loan Tenure section with Months and Years options on the same line -->
+        <div class="tenure-options">
+            <label for="tenure">Loan Tenure :  </label>
+
+            <input type="number" id="tenure" placeholder="Enter Tenure">
+            <div class="tenure-type">
+                <input type="radio" id="months" name="tenure-type" value="months" checked>
+                <label for="months">Months</label>
+                <input type="radio" id="years" name="tenure-type" value="years">
+                <label for="years">Years</label>
+            </div>
+        </div>
+
+        <button onclick="calculateEMI()">Calculate EMI</button>
+        <p id="emi-result"></p>
+        <p id="total-interest"></p>
+        <p id="total-payment"></p>
+    </div>
+    <table id="emi-table">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Principal</th>
+                <th>Interest</th>
+                <th>Total Payment</th>
+                <th>Balance</th>
+                <th>Loan Paid</th>
+            </tr>
+        </thead>
+        <tbody id="emi-table-body">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-interest-cell"></td>
+                <td id="total-payment-cell"></td>
+                <td colspan="2"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
